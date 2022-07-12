@@ -1,0 +1,54 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: Hemershon Silva
+description: "Amante de tecnologia e frequentemente compartilho minhas dúvidas e estudos por aqui"
+keywords: "ruby, Ruby on Rails, dicas, código, SEO, blog, web"
+url: 
+baseurl: ""
+
+google_analytics: UA-52446115-1
+repo: 
+disqus_shortname: "hemershon"
+disqus_site_shortname: "hemershon"
+
+# Author settings
+author:
+  name: Hemershon Silva
+  job: Engenheiro de Software
+  bio: "Formado em Ciência da computação e Engenharia de Software pela Estácio Ceut, trabalho com desenvolvimento de software desde 2012 e sou um amante de tecnologia."
+  thumb: /images/hemershon.jpeg
+  email: hemershon@gmail.com
+  url: https://hemershon.com/
+  github: https://github.com/hemershon
+  twitter: https://twitter.com/ohemershon
+  facebook: 
+  linkedin: https://linkedin.com/in/hemershon-silva
+
+# navbar pages
+navbar:
+  - slug: about
+    title: sobre
+  - slug: icons
+    title: Projetos
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
